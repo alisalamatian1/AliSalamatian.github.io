@@ -6,7 +6,7 @@ let prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
     let currentScrollPos = window.pageYOffset;
     document.getElementById("nav-btn").style.opacity = "1";
-    if (prevScrollpos > currentScrollPos) {
+    if (prevScrollpos > currentScrollPos || window.pageYOffset < 50) {
         document.getElementById("header").style.top = "0";
         document.getElementById("nav-btn").style.top = "15px";
     } else {
