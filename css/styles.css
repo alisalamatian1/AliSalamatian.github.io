@@ -727,9 +727,9 @@ z-index: 5;
 .contact a:hover {
     background-color: var(--clr-boxhover);
 }
-@media (max-width: 600px) {
+@media (max-width: 850px) {
     .contact {
-        width: 70vw;
+        width: 60vw;
     }
 }
 
