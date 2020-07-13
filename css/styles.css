@@ -276,6 +276,15 @@ z-index: 5;
 .hidden {
     display: none;
 }
+@media (max-width: 500px) {
+    #nav:checked ~ .navbar {
+        width: 70%;
+        left: 30%;
+    }
+    .nav_item {
+        text-align: left;
+    }
+}
 
 
 /* Intro Section */
