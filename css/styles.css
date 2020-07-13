@@ -295,7 +295,6 @@ z-index: 5;
     transform: translateY(20vh);
     height: 100vh;
 
-
 }
 .section_subtitle-title {
     margin-top: 0px;
@@ -312,6 +311,11 @@ z-index: 5;
     margin-top: 25px;
     max-width: 60vw;
     width: 450px;
+}
+@media (max-height: 1000px) {
+    .intro {
+        transform: translateY(0vh);
+    }
 }
 
 
@@ -413,6 +417,16 @@ z-index: 5;
         width: 30vw;
         margin-left: 160px;
         top: -15px;
+    }
+}
+@media (max-width: 500px) {
+    .about-me {
+        width: 80%;
+        margin-bottom: 150px;
+        margin-top: 150px;
+    }
+    .section_title-about-me::after {
+        width: 20vw;
     }
 }
 
@@ -540,6 +554,24 @@ z-index: 5;
     .project-left .section_project-description{
         transform: translateX(15%);
     }
+    .projects-section {
+        transform: translateX(-2%);
+    }
+}
+@media (max-width: 500px) {
+    .section_title-projects::after {
+        width: 50%;
+    }
+    .project-left .section_project-description{
+        transform: translateX(0%);
+    }
+    .project-right .section_project-description, .project-left .section_project-description {
+        width: 60%;
+    }
+    .projects-section {
+        transform: translateX(-10%);
+        padding-bottom: 0px;
+    }
 }
 
 
@@ -636,6 +668,24 @@ z-index: 5;
         margin-left: 170px;
     }
 }
+@media (max-width: 500px) {
+    .section_title-experience::after {
+        width: 30%;
+    }
+    .section_experience-description {
+        margin-bottom: 50px;
+        display: block;
+    }
+    .experience-technologies {
+        display: flex;
+    }
+    .experience-technologies p, .experience-technologies i{
+        margin-left: 10px;
+    }
+    .experience {
+        padding-bottom: 0px;
+    }
+}
 
 
 /* Contact Me */
@@ -677,9 +727,9 @@ z-index: 5;
 .contact a:hover {
     background-color: var(--clr-boxhover);
 }
-@media (max-width: 525px) {
-    .contact a {
-        font-size: 1rem;
+@media (max-width: 600px) {
+    .contact {
+        width: 70vw;
     }
 }
 
@@ -725,6 +775,9 @@ footer ul {
 @media (max-width: 550px) {
     footer ul {
         transform: translateX(-15%);
+    }
+    footer {
+        width: 70vw;
     }
 }
 
