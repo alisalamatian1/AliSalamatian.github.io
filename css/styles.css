@@ -901,18 +901,41 @@ footer ul {
 .fade-in.appear {
     opacity: 1;
 }
-@media (min-width: 1000px) {
-    .fade-left, .fade-right {
-        transition: transform 350ms ease-in;
-        transform: translateY(20px);
-    }
-    .experience-titles {
-        transform: translateX(-35%);
-    }
-    .experience-technologies {
-        transform: translateX(35%);
-    }
-    .fade-left.appear, .fade-right.appear {
-        transform: translateY(0);
-    }
+.intro {
+    transition: opacity 700ms ease-in;
+    transition-delay: 800ms;
+}
+.nav_item1, .nav_item2, .nav_item3, .nav_item4, .nav_item5 {
+    transition: opacity 700ms ease-in, transform 350ms ease-in;
+    transform: translateY(-5px);
+}
+.nav_item1.appear, .nav_item2.appear, .nav_item3.appear, .nav_item4.appear, .nav_item5.appear {
+    transform: translateY(0);
+}
+.nav_item1 {
+    transition-delay: 0ms;
+}
+.nav_item2 {
+    transition-delay: 75ms;
+}
+.nav_item3 {
+    transition-delay: 150ms;
+}
+.nav_item4 {
+    transition-delay: 225ms;
+}
+.nav_item5 {
+    transition-delay: 300ms;
+}
+.left_bar_outer, .right_bar_outer {
+    transition: opacity 600ms ease-in;
+    transition-delay: 1500ms;
+}
+.fade-in-up{
+    transition-delay: 300ms;
+    transition: transform 350ms ease-in;
+    transform: translateY(20px);
+}
+.fade-in-up.appear {
+    transform: translateY(0);
 }
