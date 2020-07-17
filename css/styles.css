@@ -892,3 +892,27 @@ footer ul {
         display: none;
     }
 }
+
+/* Fade in On Scroll */
+.fade-in {
+    opacity: 0;
+    transition: opacity 250ms ease-in;
+}
+.fade-in.appear {
+    opacity: 1;
+}
+@media (min-width: 1000px) {
+    .fade-left, .fade-right {
+        transition: transform 350ms ease-in;
+        transform: translateY(20px);
+    }
+    .experience-titles {
+        transform: translateX(-35%);
+    }
+    .experience-technologies {
+        transform: translateX(35%);
+    }
+    .fade-left.appear, .fade-right.appear {
+        transform: translateY(0);
+    }
+}
