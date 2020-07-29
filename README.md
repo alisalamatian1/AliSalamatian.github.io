@@ -12,6 +12,6 @@ images, files, and other resources are tucked away in the
 res folder.
 
 Feel free to any of the code, but just keep in mind
-that I've spend quite some developing this from scratch
+that I've spent quite some developing this from scratch
 and would greatly appreciate some credit if you do use
 any of the code.
