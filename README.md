@@ -1,5 +1,5 @@
 # My Portfolio Website 
-This is my personal website that I developed from scratch to showcase some of the cool projects that I've been working on. You can see it for yourself at [kavpreetgrewal.com](https://kavpreetgrewal.github.io/personal-website-v1/).
+This is my personal website that I developed from scratch to showcase some of the cool projects that I've been working on. You can see it for yourself at [kavpreetgrewal.com](https://kavpreetgrewal.github.io/website-v1/).
 
 <img src="https://github.com/KavpreetGrewal/personal-website-v1/blob/master/res/Screen%20Shot%202020-08-15%20at%208.00.13%20PM.png" height="500"/>
 
