@@ -102,3 +102,7 @@ section {
     padding-bottom: 200px;
 
 }
+
+p {
+    word-spacing: 1px;
+}
