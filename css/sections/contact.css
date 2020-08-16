@@ -1,0 +1,44 @@
+/* Contact Me */
+.contact {
+    max-width: 650px;
+    width: 35%;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.9rem;
+}
+.contact h2 {
+    font-size: 3.5rem;
+    margin-bottom: 50px;
+}
+.contact h2::after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 50%;
+    background-color: var(--clr-light);
+    position: relative;
+    top: 25px;
+    margin: 0 auto;
+}
+.contact p {
+    padding-bottom: 20px;
+}
+.contact a {
+    font-family: var(--ff-code);
+    padding: 15px 20px;
+    border-radius: 5px;
+    border: 2px solid var(--clr-accent);
+    color: var(--clr-accent);
+    text-decoration: none;
+    transform: translateY(-20px);
+}
+.contact a:hover {
+    background-color: var(--clr-boxhover);
+}
+@media (max-width: 850px) {
+    .contact {
+        width: 60vw;
+    }
+}
