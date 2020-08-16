@@ -1,0 +1,182 @@
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 5vh;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 0px;
+    margin-bottom: -10px;
+    -webkit-box-pack: justify;
+    -webkit-box-align: center;
+    background: var(--clr-white);
+    transition: top 0.4s;
+    width: 100vw;
+    top: 0;
+    position: fixed;
+    height: 70px;
+z-index: 5;
+}
+.nav_item {
+    display: inline-flex;
+    justify-content: space-around;
+
+}
+.nav_item a {
+    color: var(--clr-dark);
+    text-decoration: none;
+    font-size: 1rem;
+    z-index: 10;
+    padding: 10px 17px 0px 17px;
+    margin-bottom: 0px;
+    font-weight: bolder;
+
+    transition-duration: 0.25s;
+    transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition-delay: initial;
+    transition-property: all;
+    cursor: pointer;
+}
+.nav_item a:hover {
+    color: var(--clr-accent);
+    transform: translateY(-1px);
+}
+#resume {
+    font-family: var(--ff-code);
+    font-weight: normal;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-left: 5px;
+    border: 2px solid var(--clr-accent);
+    color: var(--clr-accent);
+}
+#resume:hover {
+    background-color: var(--clr-boxhover);
+}
+@media (max-width: 750px) {
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 100%;
+        width: 0%;
+        height: 100%;
+        z-index: -100;
+        background: var(--clr-textbox);
+        opacity: 0;
+        transition: all 0.4s ease;
+        box-shadow: -15px 1px 25px -5px rgba(0,0,0,0.25);
+    }
+    .nav_list {
+        position: absolute;
+        top: 50%;
+        transform: translateX(-50%) translateY(-60%);
+        width: 100%;
+    }
+    .nav_item {
+        display: block;
+        float: none;
+        width: 50%;
+        text-align: right;
+        margin-bottom: 30px;
+        transform: translateX(150%);
+    }
+    .nav_list li:not :first-child {
+        margin-left: 0px;
+    }
+    .nav_item a {
+        padding: 10% 0;
+        opacity: 0;
+        color: var(--clr-dark);
+        font-size: 1.5rem;
+        transform: translateX(-50px);
+        transition: all 0.2s ease;
+    }
+    .nav-btn {
+        position: fixed;
+        right: 20px;
+        display: block;
+        width: 60px;
+        height: 60px;
+        cursor: pointer;
+        z-index: 9999;
+        border-radius: 50%;
+        top: 10px;
+        transition: top 0.4s;
+    }
+    .nav-btn:hover i {
+        background: var(--clr-accent);
+    }
+    .nav-btn:hover i:nth-child(3) {
+        width: 20px;
+        transform: translateX(15px);
+    }
+    .nav-btn:hover i:nth-child(2) {
+        width: 27.5px;
+        transform: translateX(7.5px);
+    }
+    .nav-btn i {
+        display: block;
+        width: 35px;
+        height: 2px;
+        background: var(--clr-dark);
+        border-radius: 2px;
+        margin-left: 14px;
+    }
+    .nav-btn i:nth-child(1) {
+        margin-top: 16px;
+    }
+    .nav-btn i:nth-child(2) {
+        margin-top: 7px;
+        opacity: 1;
+    }
+    .nav-btn i:nth-child(3) {
+        margin-top: 7px;
+    }
+    #nav:checked ~ .navbar {
+        width: 50%;
+        left: 50%;
+    }
+    #nav:checked + .nav-btn {
+        transform: rotate(45deg);
+    }
+    #nav:checked + .nav-btn i {
+        background: var(--clr-dark);
+        transition: transform 0.2s ease;
+    }
+    #nav:checked + .nav-btn i:nth-child(1) {
+        transform: translateY(12px) rotate(180deg);
+    }
+    #nav:checked + .nav-btn i:nth-child(2) {
+        opacity: 0;
+    }
+    #nav:checked + .nav-btn i:nth-child(3) {
+        transform: translateY(-5px) rotate(90deg);
+    }
+    #nav:checked + .nav-btn:hover i:nth-child(3) {
+        width: 35px;
+    }
+    #nav:checked ~ .navbar {
+        z-index: 9990;
+        opacity: 1;
+    }
+    #nav:checked ~ .navbar ul li a {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    .hidden {
+        display: none;
+    }
+}
+.hidden {
+    display: none;
+}
+@media (max-width: 500px) {
+    #nav:checked ~ .navbar {
+        width: 70%;
+        left: 30%;
+    }
+    .nav_item {
+        text-align: left;
+    }
+}
