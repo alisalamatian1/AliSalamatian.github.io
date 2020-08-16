@@ -1,0 +1,30 @@
+/* Intro Section */
+.intro {
+    max-width: 1000px;
+    width: 70%;
+    margin: 0 auto;
+    transform: translateY(20vh);
+    height: 100vh;
+
+}
+.section_subtitle-title {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+    margin-left: 3px;
+}
+.section_title-intro {
+    font-size: var(--fs-h1);
+    line-height: 1.1;
+    margin-top: 0px;
+}
+.section_subtitle-intro {
+    margin-top: 25px;
+    max-width: 60vw;
+    width: 450px;
+}
+@media (max-height: 1000px) {
+    .intro {
+        transform: translateY(0vh);
+    }
+}
