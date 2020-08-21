@@ -70,7 +70,7 @@ z-index: 5;
     .nav_list {
         position: absolute;
         top: 50%;
-        transform: translateX(-50%) translateY(-60%);
+        transform: translateX(10%) translateY(-60%);
         width: 100%;
     }
     .nav_item {

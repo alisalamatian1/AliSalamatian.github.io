@@ -1,107 +1,3 @@
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
-/* Constants */
-:root {
-    --ff-primary: 'Lato', sans-serif;
-    --ff-code: 'Courier Prime', monospace;
-
-    --fw-reg: 300;
-    --fw-bold: 900;
-    /* #fdfdfd, 44452, 696978*/
-    --clr-white: #171c28;
-    --clr-dark: #e7e7e7;
-    --clr-light: #afafbf;
-    --clr-accent: #036DE6;
-    --clr-highlight: #ffdc33;
-    --clr-textbox: #1D273A;
-    --clr-boxhover: #152339;
-
-    --fs-h1: 60px;
-    --fs-h2: 1.9rem;
-    --fs-h3: 1.15rem;
-    --fs-body: 1rem;
-}
-.darkmode {
-    --clr-white: #fdfdfd;
-    --clr-dark: #444452;
-    --clr-light: #696978;
-    --clr-accent: #036DE6;
-    --clr-highlight: #ffdc33;
-    --clr-textbox: #F2F7FD;
-    --clr-boxhover: #F2F7FD;
-}
-
-@media (min-width: 750px) {
-    :root {
-        --fs-h1: 75px;
-        --fs-h2: 2.3rem;
-        --fs-h3: 1.2rem;
-        --fs-body: 1.05rem;
-    }
-}
-
-
-/* General Styles */
-body {
-    background: var(--clr-white);
-    color: var(--clr-light);
-    margin: 0;
-    font-family: var(--ff-primary);
-    font-size: var(--fs-body);
-    line-height: 1.6;
-    -webkit-font-smoothing: antialiased;
-    overflow-x: hidden;
-}
-
-img {
-    display: block;
-    max-width: 100%;
-}
-
-::selection {
-    background: var(--clr-highlight);
-    color: #36363c;
-}
-
-
-/* Typography */
-h1, h2, h3 {
-    line-height: 1.1;
-    margin: 0;
-}
-h1 { font-size: var(--fs-h1);}
-h2 { font-size: var(--fs-h2);}
-h3 { font-size: var(--fs-h3);}
-
-.section_title {
-    color: var(--clr-dark);
-}
-.section_title {
-    color: var(--clr-dark);
-    display: block;
-}
-.section_subtitle {
-    margin: 0;
-    font-size: var(--fs-h3);
-}
-
-.section_subtitle-title {
-    font-family: var(--ff-primary);
-    color: var(--clr-accent);
-}
-
-section {
-    margin-right: auto;
-    width: 100%;
-    max-width: 1600px;
-    padding-top: 200px;
-    padding-bottom: 200px;
-
-}
 /* About Section */
 .about-me {
     max-width: 900px;
@@ -112,6 +8,7 @@ section {
 }
 .about-me_section {
     display: flex;
+    margin-top: 40px;
 }
 .about_image {
     max-width: 50%;
@@ -120,6 +17,9 @@ section {
 .about_image img {
     width: 100%;
     margin-left: 5%;
+    margin-top: 30px;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, .5);
+    border-radius: 5px;
 }
 .about-me_description {
     width: 50%;
@@ -134,9 +34,13 @@ section {
 .about-me_description p {
     line-height: 1.6;
 }
+.about-me_description p  a {
+    color: var(--clr-accent);
+    text-decoration: none;
+}
 .section_title-about-me {
     margin-bottom: 15px;
-    margin-left: 3%;
+    margin-left: 6%;
 }
 .section_title-about-me::after {
     content: "";
@@ -146,7 +50,7 @@ section {
     background-color: var(--clr-light);
     position: relative;
     top: -18px;
-    margin-left: 200px;
+    margin-left: 210px;
 }
 @media (max-width: 1280px) {
     .about-me_section {
