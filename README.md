@@ -1,5 +1,5 @@
 # My Personal Website 
-This is my personal website that I developed from scratch to showcase some of the cool projects that I've been working on. You can see it for yourself at [kavpreetgrewal.com](https://kavpreetgrewal.github.io/).
+This is my personal website that I developed from scratch to showcase some of the cool projects that I've been working on. You can see it for yourself at [kavpreetgrewal.com](https://kavpreetgrewal.com).
 
 <img src="https://github.com/KavpreetGrewal/personal-website-v1/blob/master/res/Website.png" height="500"/>
 
