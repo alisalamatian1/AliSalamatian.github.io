@@ -85,8 +85,11 @@
     padding: 15px 20px;
     box-shadow: 0 0 15px 0 rgba(0, 0, 0, .5);
 }
-.experience-1 {
+.experience-robotics {
     margin-left: -80px;
+}
+.experience-lp {
+    margin-left: -40px;
 }
 
 @media (max-width: 1250px) {
@@ -118,8 +121,11 @@
         width: 52%;
         margin-left: 170px;
     }
-    .experience-1 {
-        margin-left: -15px;
+    .experience-robotics {
+        margin-left: -14px;
+    }
+    .experience-lp {
+        margin-left: 0px;
     }
 }
 @media (max-width: 700px) {
@@ -145,7 +151,7 @@
     .experience {
         padding-bottom: 0px;
     }
-    .experience-1 {
+    .experience-robotics {
         margin-left: -0px;
     }
 }
