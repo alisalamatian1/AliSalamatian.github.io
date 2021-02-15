@@ -15,7 +15,8 @@
     --clr-white: #171c28;
     --clr-dark: #e7e7e7;
     --clr-light: #afafbf;
-    --clr-accent: #036DE6;
+    /*--clr-accent: #036DE6;*/
+    --clr-accent: #6db4d7;
     --clr-highlight: #ffdc33;
     --clr-textbox: #1D273A;
     --clr-boxhover: #152339;
@@ -26,10 +27,11 @@
     --fs-body: 1rem;
 }
 .darkmode {
-    --clr-white: #fdfdfd;
+    --clr-white: #fcfcfc;
     --clr-dark: #444452;
     --clr-light: #696978;
-    --clr-accent: #036DE6;
+    --clr-accent: #036de6;
+    /*--clr-accent: #6db4d7;*/
     --clr-highlight: #ffdc33;
     --clr-textbox: #F2F7FD;
     --clr-boxhover: #F2F7FD;
@@ -60,6 +62,7 @@ body {
 img {
     display: block;
     max-width: 100%;
+    border-radius: 5px;
 }
 
 ::selection {
