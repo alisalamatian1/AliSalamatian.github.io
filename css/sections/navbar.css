@@ -54,6 +54,19 @@ z-index: 5;
 #resume:hover {
     background-color: var(--clr-boxhover);
 }
+
+#transcript {
+    font-family: var(--ff-code);
+    font-weight: normal;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-left: 5px;
+    border: 2px solid var(--clr-accent);
+    color: var(--clr-accent);
+}
+#transcript:hover {
+    background-color: var(--clr-boxhover);
+}
 @media (max-width: 750px) {
     .navbar {
         position: fixed;
